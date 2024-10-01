@@ -1,0 +1,12 @@
+@mixin texto-imponente ($sombra, $tamano, $color) {
+    text-shadow: $sombra;
+    font-size: $tamano;
+    color: $color;
+}
+
+p {
+    background: #739c2d;
+    padding: 10px;
+    display: inline;
+    @include texto-imponente(1px 2px 2px black,30px ,white )
+}
